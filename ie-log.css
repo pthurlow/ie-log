@@ -1,0 +1,81 @@
+/**
+* @author Paul Thurlow
+*
+*/
+.yj-dbg-console {
+  position:fixed;
+  height:20px;
+  background:#e0e0e0;
+  border-top:1px solid #aaa;
+  width:100%;
+  bottom: 0;
+  overflow:hidden;
+}
+.yj-dbg-console-closed {
+  height:20px !important;
+}
+.yj-dbg-console .yj-dbg-toolbar {
+  padding:5px;
+  height:11px;
+  line-height:11px;
+  cursor:default;
+}
+.yj-dbg-console .yj-dbg-toolbar a.x-grey-icon,
+.yj-dbg-console .yj-dbg-toolbar a.yj-expand {
+  float:right;
+  margin:2px;
+}
+.yj-dbg-console .yj-dbg-toolbar a.yj-expand {
+  font-weight:bold;
+  font-size:13px;
+  color:#999;
+  text-decoration:none;
+  margin:0 8px;
+}
+.yj-dbg-console-open .yj-dbg-toolbar a.yj-expand {
+  font-size:18px;
+}
+.yj-dbg-console .yj-dbg-toolbar a.yj-expand:hover {
+  color:#333;
+}
+.yj-dbg-console .yj-dbg-toolbar a.stream-icon {
+  visibility:hidden;
+}
+.yj-dbg-console-open .yj-dbg-toolbar a.stream-icon {
+  float:left;
+  visibility:visible;
+  margin:0 5px 0 0;
+  height:10px;
+  cursor:n-resize;
+}
+.yj-dbg-console-open {
+  height:200px;
+  overflow:hidden;
+}
+.yj-dbg-console-open .yj-dbg-container {
+  background:#fff;
+  height:170px;
+  margin:0px 5px 5px 5px;
+  border-top:1px solid #999;
+  border-left:1px solid #aaa;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+.yj-dbg-console ul,
+.yj-dbg-console li {
+  display:block;
+  padding:0;
+  margin:0;
+}
+.yj-dbg-console li {
+  padding:3px 5px;
+  border-bottom:1px solid #f0f0f0;
+}
+.yj-dbg-console li p {
+  display:block;
+}
+.yj-dbg-console li .yj-time {
+  float:right;
+  color:#666;
+  padding-right:5px;
+}
